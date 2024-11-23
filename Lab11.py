@@ -10,7 +10,7 @@ if __name__=='__main__':
         print("2. Assignment statistics")
         print("3. Assignment graph")
         print()
-        selection=int(input("Enter your selection:"))
+        selection=int(input("Enter your selection: "))
         if selection==1:
             student_name=input("What is the student's name: ")
             for line in student_content:
@@ -33,7 +33,7 @@ if __name__=='__main__':
                                         student_assignment_grade*=assignment_weight
                                         student_total_points+=student_assignment_grade
                                         grade_count+=1
-                    print(f"{student_total_points//1000}%")
+                    print(f"{round(student_total_points/1000,2)}%")
                     print()
             if not student_total_points:
                 print("Student not found")
