@@ -1,7 +1,6 @@
 import os
 import matplotlib.pyplot as plt
 if __name__=='__main__':
-    while True:
         submission_folder="data/submissions"
         student_file = open("data/students.txt", "r")
         student_content = student_file.readlines()
